@@ -1,4 +1,4 @@
-# js-adv-reduce-challenge
+# tic-tac-toe
 
 <h2>English Version</h2>
 <br>
