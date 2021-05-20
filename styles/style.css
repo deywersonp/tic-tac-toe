@@ -1,0 +1,73 @@
+body{
+    text-align: center;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid gray;
+
+    display: inline-block;
+}
+
+.o{
+    position: relative;
+}
+
+.o:after{
+    position: absolute;
+    
+    content: "\1F530";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.x{
+    position: relative;
+}
+
+.x:after{
+    position: absolute;
+    
+    content: "\1F93A";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.button {
+    margin-top: 40px;
+    margin-left: 400px;
+
+    padding: 10px;
+    font-size: 0.9rem;
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    font-weight: 700;
+    background-color: rgb(192, 188, 126);    
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: rgb(209, 207, 58);
+    font-size: 1.1rem;
+    
+}
+
