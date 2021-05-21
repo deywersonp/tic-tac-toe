@@ -21,6 +21,10 @@ function handleClick(event) {
                 alert("O jogo acabou! O vencedor foi " + symbol1)
             }
         }, 20)
+    } else if (draw()) {
+        setTimeout(() => {
+            alert("Os jogadores Empataram!")
+        }, 20)
     };
     updateSquare(position);
 }
