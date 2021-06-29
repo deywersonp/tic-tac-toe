@@ -1,8 +1,4 @@
-// iniciar minhas variáveis
-// Preciso criar o empate, quando ele ocorre?
-//Quando todos os squares != '' e gameOver = false. 
-
-let board = ['', '', '', '', '', '', '', '', '', '']
+let board = ['', '', '', '', '', '', '', '', '']
 let playerTime = 0;
 let gameOver = false;
 
@@ -67,18 +63,13 @@ function restart() {
   reset();
 }
 
-function draw() {
-  if (board[0] != '' &&
-    board[1] != '' &&
-    board[2] != '' &&
-    board[3] != '' &&
-    board[4] != '' &&
-    board[5] != '' &&
-    board[6] != '' &&
-    board[7] != '' &&
-    board[8] != '' && gameOver == false) {
-    return true;
-  }
+function notEmptyBoard(element) {
+  return element != '';
+}
 
-  return false;
+
+function draw() {
+  if (board.every(notEmptyBoard) && gameOver == false) {
+    return true
+  }
 }
