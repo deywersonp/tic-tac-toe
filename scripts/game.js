@@ -60,7 +60,7 @@ function isWin() {
 }
 
 function restart() {
-  board = ['', '', '', '', '', '', '', '', '', '']
+  board = ['', '', '', '', '', '', '', '', '']
   playerTime = 0;
   gameOver = false;
 
@@ -75,7 +75,8 @@ function draw() {
     board[4] != '' &&
     board[5] != '' &&
     board[6] != '' &&
-    board[7] != '' && gameOver == false) {
+    board[7] != '' &&
+    board[8] != '' && gameOver == false) {
     return true;
   }
 

@@ -68,6 +68,7 @@ h1{
 .button:hover {
     background-color: rgb(209, 207, 58);
     font-size: 1.1rem;
+    cursor: pointer;
     
 }
 
